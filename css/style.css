@@ -31,6 +31,8 @@ h1,h2,h3,h4{
     background-color: rgb(128, 165, 245);
     font-family: 'DynaPuff', cursive;
     padding: 1rem;
+    animation-name: textOpacity ;
+    animation-duration: 3s;
 }
 .textCenter{
     text-align: center;
@@ -72,6 +74,22 @@ aside ul li{
 }
 .wLibros{
 width: 100%;
+}
+.transform:hover{
+   
+    transform:translateX(10px);
+    cursor: pointer;
+    transition: transform 1s;
+ }
+ .scale:hover{
+   
+    transform: scale(0.8);
+    cursor: pointer;
+    transition: transform 1s;
+ }
+ @keyframes textOpacity {
+    from{opacity: 0;}
+    to {opacity: 1;}
 }
 
 .flexImg{
@@ -117,6 +135,7 @@ width: 100%;
 
 .two{
     grid-area: two;
+    background: linear-gradient(to right ,rgb(73, 115, 155),rgb(8, 95, 175));
     background-color: rgb(45, 103, 156);
 }
 
@@ -127,7 +146,7 @@ width: 100%;
 
 .four{
    grid-area: four;
-   background-color: rgb(20, 82, 163);
+   background: linear-gradient(to top ,rgb(98, 98, 230),rgb(61, 61, 83));
 }
 
 .five{
