@@ -1,0 +1,468 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=DynaPuff&display=swap');
+
+html{
+    font-size: 62.5;
+}
+*{
+    box-sizing: border-box;
+}
+
+body{
+   
+    background-color: rgb(21, 21, 54);
+   
+}
+
+h1{
+    color :darkblue
+}
+
+h2{
+    color:darkblue
+}
+h3{
+    color:darkblue
+}
+
+h1,h2,h3,h4{
+    background-color: rgb(128, 165, 245);
+    font-family: 'DynaPuff', cursive;
+    padding: 1rem;
+}
+.textCenter{
+    text-align: center;
+}
+aside ul{
+    list-style: none;
+    margin: 2rem auto
+}
+aside ul li a{
+    text-decoration: none;
+    font-family: 'DynaPuff', cursive;
+    font-size: 1rem;   
+    padding: 1rem;
+}
+aside ul li a:hover{
+    color: black;
+}
+aside ul li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.pFont{
+    font-family: 'Aboreto', cursive;
+}
+
+.pBox{
+    width: 90%;
+    height: auto;
+    margin: 20px auto;
+}
+
+.img{
+   
+   width: 100%;
+}
+.wLibros{
+width: 100%;
+}
+
+.flexImg{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items:flex-start;
+    justify-content: space-around;
+}
+.flexFooter{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+   
+}
+
+/*------grid index----------------*/
+#gridContenedor{
+    display: grid;
+    width: 100vw;
+    height: 100vh; 
+    gap: 10px;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6,1fr);
+    grid-template-areas: 
+    "one" 
+    "two"  
+    "three" 
+    "four"
+    "six" 
+    "five" 
+    ;
+
+}
+    
+
+.one{
+    grid-area: one;
+    background-color: rgb(55, 87, 155);
+}
+
+.two{
+    grid-area: two;
+    background-color: rgb(45, 103, 156);
+}
+
+.three{
+   grid-area: three;
+   background-color: rgb(110, 97, 226);
+}
+
+.four{
+   grid-area: four;
+   background-color: rgb(20, 82, 163);
+}
+
+.five{
+   grid-area: five;
+   background-color: rgb(25, 23, 126);
+}
+.six{
+    grid-area: six;
+   background-color: rgb(63, 23, 126);
+}
+
+/*------responsive----------------*/
+
+
+@media (min-width:480px){
+    #gridContenedor{
+
+        grid-template-columns: repeat(2,auto) ;
+        grid-template-rows: repeat(5,auto);
+        grid-template-areas: 
+        "one one"
+        "two three"
+        "four four"
+        "six six"
+        "five five"
+        ;
+
+
+    }
+    .wLibros{
+        width: 50%;
+        }
+    aside ul li{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            
+        }
+
+       
+}
+
+@media (min-width:720px){
+    #gridContenedor{
+        
+        grid-template-columns: repeat(3,auto);
+        grid-template-rows: repeat(6,auto);
+        grid-template-areas: 
+        "one one one"
+        "two two two"
+        "three three three"
+        "four four four"
+        "six six six"
+        "five five five"
+        ;
+
+
+    }
+    .wLibros{
+        width: 30%;
+        }
+    aside ul li{
+            display: inline-block;
+            
+        }
+}
+
+@media (min-width:1024px){
+    #gridContenedor{
+        
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(5,auto);
+        grid-template-areas: 
+        "one one one"
+        "two two two"
+        "three four four"
+        "six four four"
+        "five five five"
+        ;
+
+
+    }
+    .wLibros{
+        width: 35%;
+        }
+
+    .flexSix{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    }
+
+}
+/*------grid contacto----------------*/
+#gridContenedorContacto{
+    display: grid;
+    width: 100vw;
+    height: 100vh; 
+    gap: 10px;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5,1fr);
+    grid-template-areas: 
+    "one" 
+    "two"  
+    "three" 
+    "four" 
+    "five" 
+    ;
+
+}
+    
+
+.one{
+    grid-area: one;
+    background-color: rgb(55, 87, 155);
+}
+
+.two{
+    grid-area: two;
+    background-color: rgb(45, 103, 156);
+}
+
+.three{
+   grid-area: three;
+   background-color: rgb(110, 97, 226);
+}
+
+.four{
+   grid-area: four;
+   background-color: rgb(20, 82, 163);
+}
+
+.five{
+   grid-area: five;
+   background-color: rgb(25, 23, 126);
+}
+
+
+/*------responsive----------------*/
+
+
+@media (min-width:480px){
+    #gridContenedorContacto{
+       
+        grid-template-columns: repeat(2,auto) ;
+        grid-template-rows: repeat(4,auto);
+        grid-template-areas: 
+        "one one"
+        "two three"
+        "four four"
+        "five five"
+        ;
+
+
+    }
+    .wLibros{
+        width: 50%;
+        }
+    aside ul li{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            
+        }
+
+       
+}
+
+@media (min-width:720px){
+    #gridContenedorContacto{
+        
+        grid-template-columns: repeat(2,auto);
+        grid-template-rows: repeat(5,auto);
+        grid-template-areas: 
+        "one one"
+        "two two"
+        "three three"
+        "four four"
+        "five five"
+        ;
+
+
+    }
+    .wLibros{
+        width: 30%;
+        }
+    aside ul li{
+            display: inline-block;
+            
+        }
+}
+
+@media (min-width:1024px){
+    #gridContenedorContacto{
+        
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(4,auto);
+        grid-template-areas: 
+        "one one one"
+        "two two two"
+        "three four four"
+        "five five five"
+        ;
+
+
+    }
+    .wLibros{
+        width: 35%;
+        }
+
+
+}
+
+/*------grid géneros----------------*/
+#gridContenedorGeneros{
+    display: grid;
+    width: 100vw;
+    height: 100vh; 
+    gap: 10px;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5,1fr);
+    grid-template-areas: 
+    "one" 
+    "two"  
+    "three" 
+    "four" 
+    "five" 
+    ;
+
+}
+    
+
+.one{
+    grid-area: one;
+    background-color: rgb(55, 87, 155);
+}
+
+.two{
+    grid-area: two;
+    background-color: rgb(45, 103, 156);
+}
+
+.three{
+   grid-area: three;
+   background-color: rgb(110, 97, 226);
+}
+
+.four{
+   grid-area: four;
+   background-color: rgb(20, 82, 163);
+}
+
+.five{
+   grid-area: five;
+   background-color: rgb(25, 23, 126);
+}
+
+/*------responsive----------------*/
+
+
+@media (min-width:480px){
+    #gridContenedorGeneros{
+       
+        grid-template-columns: repeat(2,auto) ;
+        grid-template-rows: repeat(4,auto);
+        grid-template-areas: 
+        "one one"
+        "two three"
+        "four four"
+        "five five"
+        ;
+
+
+    }
+    .wLibros{
+        width: 50%;
+        }
+    aside ul li{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            
+        }
+
+       
+}
+
+@media (min-width:720px){
+    #gridContenedorGeneros{
+        
+        grid-template-columns: repeat(2,auto);
+        grid-template-rows: repeat(5,auto);
+        grid-template-areas: 
+        "one one"
+        "two two"
+        "three three"
+        "four four"
+        "five five"
+        ;
+
+
+    }
+    .wLibros{
+        width: 30%;
+        }
+    aside ul li{
+            display: inline-block;
+            
+        }
+}
+
+@media (min-width:1024px){
+    #gridContenedorGeneros{
+        
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(4,auto);
+        grid-template-areas: 
+        "one one one"
+        "two two two"
+        "three four four"
+        "five five five"
+        ;
+
+
+    }
+    .wLibros{
+        width: 35%;
+        }
+
+    
+}
+
