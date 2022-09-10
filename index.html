@@ -1,16 +1,14 @@
 
 
-
-
 <!doctype html>
 <html lang="es">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="src/imagenfavicon.png">
-    <link rel="stylesheet" href="css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
     <title>Libros de Gastón</title>
      
 </head>
@@ -37,13 +35,13 @@
           </div>
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img src="src/bigbooks.jpg" class="d-block w-100" alt="...">
+              <img src="src/bigbooks.jpg" class="d-block w-100" alt="libreria">
             </div>
             <div class="carousel-item">
-              <img src="src/atlas.jpg" class="d-block w-100" alt="...">
+              <img src="src/atlas.jpg" class="d-block w-100" alt="atlas">
             </div>
             <div class="carousel-item">
-              <img src="src/kids.jpg" class="d-block w-100" alt="...">
+              <img src="src/kids.jpg" class="d-block w-100" alt="kids">
             </div>
           </div>
           <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -59,7 +57,7 @@
     </header>
     <aside class="two">
       <!-- inicia navbar -->
-      <nav class="navbar navbar-expand-md  ">
+      <nav class="navbar navbar-expand-md fontNav">
         <div class="container-fluid">
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -87,6 +85,7 @@
       </nav>
       <!-- finaliza navbar -->
     </aside>
+    <!-- comienza seccion three -->
         <section class="three">
             <article>
                <p class="textCenter pFont pBox">
@@ -97,58 +96,101 @@
               <img src="src/lirbosvector.svg" alt="carpaNoche">
             </div>
         </section>
+        <!-- finaliza seccion three -->
+
+        <!-- comienza seccion four -->
         <section class="four">
-            <div class="flexImg"> 
-                <div class="wLibros transform">
-                  <figure class="pFont textCenter">
-                    <img src="src/libros/1984.jpg" alt="1984Libro">
-                      <figcaption>1984</figcaption>
-                        <p>$3000</p>
-                  </figure>
-                </div>
-                <div class="wLibros transform">
-                  <figure class="pFont textCenter">
-                    <img src="src/libros/peterpan.jpg" alt="PanLibro">
-                      <figcaption>Peter Pan</figcaption>
-                        <p>$3500</p>
-                  </figure>
-                </div>
-                <div class="wLibros transform">
-                  <figure class="pFont textCenter">
-                    <img src="src/libros/frankenstein.libro.jpg" alt="frankensteinLibro">
-                      <figcaption>Frankenstein</figcaption>
-                        <p>$4000</p>
-                  </figure>
-                </div>
-                <div class="wLibros transform">
-                    <figure class="pFont textCenter">
-                        <img src="src/libros/la-vuelta-al-mundo-en-80-dias.jpg" alt="lavueltaalmundon80diasLibro">
-                          <figcaption>La Vuelta al Mundo en 80 Dias</figcaption>
-                            <p>$2800</p>
-                </figure>
-                </div>
-                <div class="wLibros transform">
-                    <figure class="pFont textCenter">
-                        <img src="src/libros/jane.austen.jpg" alt="janeLibro">
-                    <figcaption>Orgullo y Prejuicio</figcaption>
-                       <p>$3500</p>
-                    </figure>
-                </div>
-                <div class="wLibros transform">
-                    <figure class="pFont textCenter">
-                        <img src="src/libros/mobydick.jpg" alt="mobyDickLibro">
-                          <figcaption>Moby Dick</figcaption>
-                        <p>$4200</p>
-                    </figure>
-                </div>
+          <!-- comienzan cards -->
+          <div class="flexImg">
+            <div class="card transform" style="width: 14rem;">
+              <img src="src/libros/navidad.jpg" class="card-img-top" alt="cuento de navidad">
+              <div class="card-body">
+                <h5 class="card-title">Breve Historia de la Navidad</h5>
+                <p class="card-text">Sd on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Comprar</a>
+              </div>
             </div>
+            <div class="card transform" style="width: 14rem;">
+              <img src="src/libros/jane.austen.jpg" class="card-img-top" alt="libro de Jane Austen">
+              <div class="card-body">
+                <h5 class="card-title">Orgullo y Prejuicio</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Comprar</a>
+              </div>
+            </div>
+            <div class="card transform" style="width: 14rem;">
+              <img src="src/libros/frankenstein.libro.jpg" class="card-img-top" alt="Libro Frankenstein">
+              <div class="card-body">
+                <h5 class="card-title">Frankenstein</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Comprar</a>
+              </div>
+            </div>
+            <div class="card transform" style="width: 14rem;">
+              <img src="src/libros/El-libro-de-la-selva.jpg" class="card-img-top" alt="libro libro de la selva">
+              <div class="card-body">
+                <h5 class="card-title">El Libro de la Selva</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Comprar</a>
+              </div>
+            </div>
+            <div class="card transform" style="width: 14rem;">
+              <img src="src/libros/1984.jpg" class="card-img-top" alt="libro 1984">
+              <div class="card-body">
+                <h5 class="card-title">1984</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Comprar</a>
+              </div>
+            </div>
+            <div class="card transform" style="width: 14rem;">
+              <img src="src/libros/lupin.jpg" class="card-img-top" alt="libro de lupin">
+              <div class="card-body">
+                <h5 class="card-title">Arsene Lupin - Caballero Larón</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Comprar</a>
+              </div>
+            </div>
+            <div class="card transform" style="width: 14rem;">
+              <img src="src/libros/despue-s-stephen-king-.jpg" class="card-img-top" alt="libro despues">
+              <div class="card-body">
+                <h5 class="card-title">Después</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Comprar</a>
+              </div>
+            </div>
+            <div class="card transform" style="width: 14rem;">
+              <img src="src/libros/viaje-al-centro-de-la-tierra.jpg" class="card-img-top" alt="libro Viaje al centro de la tierra">
+              <div class="card-body">
+                <h5 class="card-title">Viaje al Centro de la Tierra</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Comprar</a>
+              </div>
+            </div>
+            <div class="card transform" style="width: 14rem;">
+              <img src="src/libros/stephen-king-billy-summers.jpg" class="card-img-top" alt="Libro Billy Summers">
+              <div class="card-body">
+                <h5 class="card-title">Billy Summers</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Comprar</a>
+              </div>
+            </div>
+
+          </div>
+          <!-- finalizan cards --> 
+
         </section>
+        <!-- finaliza seccion four -->
+
+        <!-- comienza seccion six -->
         <div class="six flexSix"> 
           <h3>Escucha musica relax mientras lees !</h3>
           
            <iframe width="300" height="200" src="https://www.youtube.com/embed/KfADcE8DOuU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           
       </div> 
+      <!-- finaliza seccion six -->
+
+      <!-- comienza seccion five -->
     <footer class="flexFooter five">
         <h2>Visítanos en nuestras redes sociales</h2>
         
@@ -159,6 +201,7 @@
               <img  class="scale" src="src/favicon-small.png" alt="libros-small">
             </a>
     </footer>
+    <!-- finaliza seccion six -->
     </div>
 </body>
 </html>

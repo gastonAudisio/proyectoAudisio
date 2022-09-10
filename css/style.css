@@ -14,8 +14,8 @@ html{
 
 body{
    
-    background-color: rgb(21, 21, 54);
-   
+    background-color: rgb(234, 234, 245);
+    
 }
 
 h1{
@@ -43,27 +43,21 @@ aside ul{
     list-style: none;
     margin: 2rem auto
 }
-aside ul li a{
+.fontNav{
     text-decoration: none;
     font-family: 'DynaPuff', cursive;
-    font-size: 1rem;   
+    font-size: 1.5rem;   
     padding: 1rem;
     color: rgb(21, 11, 168);
-}
-aside ul li a:hover{
     color: black;
-    
 }
-aside ul li{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    
-}
+
+
 
 .pFont{
     font-family: 'Aboreto', cursive;
+    font-size: 20px;
+    font-weight:700;
 }
 
 .pBox{
@@ -85,9 +79,10 @@ width: 100%;
 }
 .transform:hover{
    
-    transform:translateX(10px);
+    transform:translateX(2px);
     cursor: pointer;
     transition: transform 1s;
+    filter: drop-shadow(5px);
  }
  .scale:hover{
    
@@ -107,6 +102,8 @@ width: 100%;
     flex-direction: row;
     align-items:flex-start;
     justify-content: space-around;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 .flexFooter{
     display: flex;
@@ -120,9 +117,9 @@ width: 100%;
 /*------grid index----------------*/
 #gridContenedor{
     display: grid;
-    width: 100vw;
+    width: 98.5vw;
     height: 100vh; 
-    gap: 10px;
+    gap: 5px;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(6,1fr);
     grid-template-areas: 
@@ -139,23 +136,23 @@ width: 100%;
 
 .one{
     grid-area: one;
-    background-color: rgb(161, 179, 218);
+    
 }
 
 .two{
     grid-area: two;
-    background: linear-gradient(to right ,rgb(199, 227, 255),rgb(8, 95, 175));
+    
     
 }
 
 .three{
    grid-area: three;
-   background-color: rgb(159, 152, 216);
+  
 }
 
 .four{
    grid-area: four;
-   background: linear-gradient(to top ,rgb(181, 181, 211),rgb(106, 106, 207));
+   
 }
 
 .five{
@@ -164,7 +161,7 @@ width: 100%;
 }
 .six{
     grid-area: six;
-   background-color: rgb(136, 124, 243);
+ 
 }
 
 /*------responsive----------------*/
@@ -256,7 +253,7 @@ width: 100%;
 /*------grid contacto----------------*/
 #gridContenedorContacto{
     display: grid;
-    width: 100vw;
+    width: 98.5vw;
     height: 100vh; 
     gap: 10px;
     grid-template-columns: 1fr;
@@ -274,23 +271,23 @@ width: 100%;
 
 .one{
     grid-area: one;
-    background-color: rgb(91, 137, 236);
+    
 }
 
 .two{
     grid-area: two;
-    background-color: rgb(45, 103, 156);
+    
 }
 
 .three{
    grid-area: three;
-   background-color: rgb(110, 97, 226);
+   background-color: rgb(249, 248, 252);
    
 }
 
 .four{
    grid-area: four;
-   background-color: rgb(20, 82, 163);
+   
    align-items: center;
 }
 
@@ -379,7 +376,7 @@ width: 100%;
 /*------grid géneros----------------*/
 #gridContenedorGeneros{
     display: grid;
-    width: 100vw;
+    width: 98.5vw;
     height: 100vh; 
     gap: 10px;
     grid-template-columns: 1fr;
@@ -397,23 +394,23 @@ width: 100%;
 
 .one{
     grid-area: one;
-    background-color: rgb(55, 87, 155);
+  
 }
 
 .two{
     grid-area: two;
-    background-color: rgb(45, 103, 156);
+    
 }
 
 .three{
    grid-area: three;
-   background-color: rgb(110, 97, 226);
    
+   align-items: center;
 }
 
 .four{
    grid-area: four;
-   background-color: rgb(20, 82, 163);
+   
 }
 
 .five{
