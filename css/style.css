@@ -33,8 +33,10 @@ h1,h2,h3,h4{
     background: linear-gradient(to right ,rgb(199, 227, 255),rgb(8, 95, 175));
     font-family: 'DynaPuff', cursive;
     padding: 1rem;
+    margin: 5px 40px;
+    border-radius: 10px;
     animation-name: textOpacity ;
-    animation-duration: 3s;
+    animation-duration: 4s;
 }
 .textCenter{
     text-align: center;
@@ -74,6 +76,9 @@ aside ul{
    width: 50%;
    justify-content:center;
  }
+ .bordeRadius{
+    border-radius: 1px;
+  }
 .wLibros{
 width: 100%;
 }
