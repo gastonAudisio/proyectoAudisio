@@ -1,9 +1,226 @@
 
+//variables declaradas
 
-$colorOne:rgba(5, 5, 204, 0.801);
+$colorOne:rgb(234, 234, 245);
+$colorTwo: darkblue;
+$colorThree:  rgb(25, 23, 126);
 
-h1{
-    color: $colorOne;
+
+*{
+    box-sizing: border-box;
+    
+}
+html {
+    font-size: 62.5;
+    
+    body{
+   
+        background-color: $colorOne;
+        
+        h1,h2,h3{
+            color :$colorTwo
+        }
+
+    }
+    
 }
 
 
+//clases
+
+.pBox{
+    width: 90%;
+    height: auto;
+    margin: 20px auto;
+}
+
+.img{
+   height: 70%;
+   width: 100%;
+}
+.imgC{
+   width: 50%;
+   justify-content:center;
+ }
+ 
+.wLibros{
+width: 100%;
+}
+.transform:hover{
+   
+    transform:translateX(2px);
+    cursor: pointer;
+    transition: transform 1s;
+    filter: drop-shadow(5px);
+ }
+ .scale:hover{
+   
+    transform: scale(0.8);
+    cursor: pointer;
+    transition: transform 1s;
+ }
+ @keyframes textOpacity {
+    from{opacity: 0;}
+    to {opacity: 1;}
+}
+
+.flexImg{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items:flex-start;
+    justify-content: space-around;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.flexFooter{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+   
+}
+
+/*------grid index----------------*/
+#gridContenedor{
+    display: grid;
+    width: 98.5vw;
+    height: 100vh; 
+    gap: 5px;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6,1fr);
+    grid-template-areas: 
+    "one" 
+    "two"  
+    "three" 
+    "four"
+    "six" 
+    "five" 
+    ;
+
+}
+    
+
+.one{
+    grid-area: one;
+    
+}
+
+.two{
+    grid-area: two;
+    
+    
+}
+
+.three{
+   grid-area: three;
+  
+}
+
+.four{
+   grid-area: four;
+   
+}
+
+.five{
+   grid-area: five;
+   background-color:$colorThree;
+}
+.six{
+    grid-area: six;
+ 
+}
+
+/*------grid contacto----------------*/
+#gridContenedorContacto{
+    display: grid;
+    width: 98.5vw;
+    height: 100vh; 
+    gap: 10px;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5,1fr);
+    grid-template-areas: 
+    "one" 
+    "two"  
+    "three" 
+    "four" 
+    "five" 
+    ;
+
+}
+    
+
+.one{
+    grid-area: one;
+    
+}
+
+.two{
+    grid-area: two;
+    
+}
+
+.three{
+   grid-area: three;
+   background-color: $colorOne;
+   
+}
+
+.four{
+   grid-area: four;
+   
+   align-items: center;
+}
+
+.five{
+   grid-area: five;
+   background-color: $colorThree;
+}
+
+
+/*------grid géneros----------------*/
+#gridContenedorGeneros{
+    display: grid;
+    width: 98.5vw;
+    height: 100vh; 
+    gap: 10px;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5,1fr);
+    grid-template-areas: 
+    "one" 
+    "two"  
+    "three" 
+    "four" 
+    "five" 
+    ;
+
+}
+    
+
+.one{
+    grid-area: one;
+  
+}
+
+.two{
+    grid-area: two;
+    
+}
+
+.three{
+   grid-area: three;
+   
+   align-items: center;
+}
+
+.four{
+   grid-area: four;
+   
+}
+
+.five{
+   grid-area: five;
+   background-color: $colorThree;
+}

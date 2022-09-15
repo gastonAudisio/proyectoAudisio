@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=DynaPuff&display=swap');
+
+
+$fontOne:'DynaPuff', cursive;
+$fontTwo:'Aboreto', cursive;
+$gradientOne:to right ,rgb(199, 227, 255),rgb(8, 95, 175);
+
+h1,h2,h3,h4{
+    background: linear-gradient($gradientOne);
+    font-family: $fontOne;
+    padding: 1rem;
+    margin: 5px 40px;
+    border-radius: 10px;
+    animation-name: textOpacity ;
+    animation-duration: 4s;
+}
+.textCenter{
+    text-align: center;
+}
+
+
+.pFont{
+    font-family: $fontTwo;
+    font-size: 20px;
+    font-weight:700;
+}
