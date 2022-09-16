@@ -83,6 +83,10 @@ html body h1, html body h2, html body h3 {
   margin-right: 10px;
 }
 
+.imgCards {
+  width: 13rem;
+}
+
 .flexFooter {
   display: flex;
   flex-direction: row;
@@ -193,7 +197,7 @@ html body h1, html body h2, html body h3 {
   background-color: rgb(25, 23, 126);
 }
 
-h1, h2, h3, h4 {
+h1, h2 {
   background: linear-gradient(to right, rgb(199, 227, 255), rgb(8, 95, 175));
   font-family: "DynaPuff", cursive;
   padding: 1rem;
