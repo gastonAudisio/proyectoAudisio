@@ -219,6 +219,10 @@ h1, h2 {
   font-weight: 700;
 }
 
+.pCard {
+  padding-top: 17px;
+}
+
 /*------responsive index----------------*/
 @media (min-width: 480px) {
   #gridContenedor {
