@@ -6,7 +6,7 @@ $fontOne:'DynaPuff', cursive;
 $fontTwo:'Aboreto', cursive;
 $gradientOne:to right ,rgb(199, 227, 255),rgb(8, 95, 175);
 
-h1,h2{
+h1,h2,h3{
     background: linear-gradient($gradientOne);
     font-family: $fontOne;
     padding: 1rem;
