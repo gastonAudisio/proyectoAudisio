@@ -50,8 +50,11 @@ width: 100%;
    
     transform:translateX(2px);
     cursor: pointer;
-    transition: transform 1s;
+    transition: transform 1s all;
     filter: drop-shadow(5px);
+    box-shadow: 10px 10px 40px 10px #5F4B8BFF;
+
+    
  }
  .scale:hover{
    
@@ -88,18 +91,6 @@ width: 100%;
 
     width: 13rem;
  
-}
-
-.shadow{
-    box-shadow: 10px 10px 10px;
-    transition: all;
-}
-
-.shadow:hover{
-
-   
-    box-shadow: 10px 10px 10px;
-    
 }
 
 

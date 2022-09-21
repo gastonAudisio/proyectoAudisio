@@ -38,8 +38,9 @@ html body h1, html body h2, html body h3 {
 .transform:hover {
   transform: translateX(2px);
   cursor: pointer;
-  transition: transform 1s;
+  transition: transform 1s all;
   filter: drop-shadow(5px);
+  box-shadow: 10px 10px 40px 10px #5f4b8b;
 }
 
 .scale:hover {
@@ -85,15 +86,6 @@ html body h1, html body h2, html body h3 {
 
 .imgCards {
   width: 13rem;
-}
-
-.shadow {
-  box-shadow: 10px 10px 10px;
-  transition: all;
-}
-
-.shadow:hover {
-  box-shadow: 10px 10px 10px;
 }
 
 .flexFooter {
@@ -206,16 +198,26 @@ html body h1, html body h2, html body h3 {
   background-color: rgb(25, 23, 126);
 }
 
-h1, h2, h3 {
+h1, h3, h2 {
   background: linear-gradient(to right, rgb(199, 227, 255), rgb(8, 95, 175));
   font-family: "DynaPuff", cursive;
-  padding: 1rem;
-  margin: 5px 40px;
+  padding: 1.5rem;
+  margin: 5px 20px;
   border-radius: 10px;
   -webkit-animation-name: textOpacity;
           animation-name: textOpacity;
   -webkit-animation-duration: 4s;
           animation-duration: 4s;
+}
+
+h2 {
+  padding: 0.5rem;
+  margin: 5px 40px;
+}
+
+h3 {
+  padding: 1rem;
+  margin: 20px 20px;
 }
 
 .textCenter {
@@ -367,7 +369,30 @@ aside ul {
   text-decoration: none;
   font-family: "DynaPuff", cursive;
   font-size: 1.5rem;
-  padding: 1rem;
-  color: rgb(21, 11, 168);
-  color: black;
+}
+
+.btn1 {
+  padding: 20px 10px;
+  font-size: 1.5rem;
+  position: relative;
+}
+
+.btn1::after, .btn1::before {
+  border: 3px solid black;
+  content: "";
+  position: absolute;
+  width: calc(100% - 6px);
+  height: calc(100% - 6px);
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  transition: transform 0.3s ease;
+}
+
+.btn1:hover::after {
+  transform: translate(-5px, -5px);
+}
+
+.btn1:hover::before {
+  transform: translate(5px, 5px);
 }/*# sourceMappingURL=main.css.map */

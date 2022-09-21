@@ -6,14 +6,24 @@ $fontOne:'DynaPuff', cursive;
 $fontTwo:'Aboreto', cursive;
 $gradientOne:to right ,rgb(199, 227, 255),rgb(8, 95, 175);
 
-h1,h2,h3{
+h1{
     background: linear-gradient($gradientOne);
     font-family: $fontOne;
-    padding: 1rem;
-    margin: 5px 40px;
+    padding: 1.5rem;
+    margin: 5px 20px;
     border-radius: 10px;
     animation-name: textOpacity ;
     animation-duration: 4s;
+}
+h2{
+@extend h1;
+    padding: 0.5rem;
+    margin: 5px 40px;
+}
+h3{
+    @extend h1;
+    padding: 1rem;
+    margin: 20px 20px;
 }
 .textCenter{
     text-align: center;
