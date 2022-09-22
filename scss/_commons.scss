@@ -46,12 +46,9 @@ width: 100%;
     cursor: pointer;
     transition: transform 1s all;
     filter: drop-shadow(5px);
-    box-shadow: 10px 10px 40px 10px #5F4B8BFF;
-
-    
+    box-shadow: 10px 10px 40px 10px #5F4B8BFF;  
  }
  .scale:hover{
-   
     transform: scale(0.8);
     cursor: pointer;
     transition: transform 1s;
@@ -64,7 +61,6 @@ width: 100%;
 
 .flexImg{
     @include flexImagenes(100%,wrap,row,flex-start,space-around)
-
 }
 
 .imgCards{
@@ -73,9 +69,7 @@ width: 100%;
 }
 
 .flexFooter{
-
     @include flexPie(row,center,space-around)
-   
 }
 
 /*------grid index----------------*/

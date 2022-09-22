@@ -17,6 +17,7 @@
 
 @mixin flexImagenes ($width,$flexWrap,$flexDirection,$alignItems,$justifyContent) {
     display: flex;
+    width: $width;
     flex-wrap: $flexWrap;
     flex-direction: $flexDirection;
     align-items: $alignItems;
