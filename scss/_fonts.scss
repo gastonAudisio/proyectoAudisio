@@ -7,6 +7,7 @@
 $fontOne:'DynaPuff', cursive;
 $fontTwo:'Aboreto', cursive;
 $gradientOne:to right ,rgb(199, 227, 255),rgb(8, 95, 175);
+$gradientTwo:to right ,rgb(22, 69, 116),rgb(10, 109, 201);
 
 h1{
     
@@ -37,5 +38,22 @@ h3{
 }
 
 .pCard{
-    padding-top: 17px;
+    padding-top: 22px;
+}
+.pCard2{
+@extend .pCard;
+    padding-top: 22px;
+    padding-bottom: 20px;
+
+}
+
+.buttonCard{
+
+    background: linear-gradient($gradientTwo);
+    border-color: white;
+    border-radius: 30px;
+ 
+    
+    
+
 }

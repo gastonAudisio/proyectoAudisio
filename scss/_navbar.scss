@@ -16,53 +16,13 @@ aside ul{
    
 }
 
-.btn{
+.boton{
 padding: 20px 50px;
 font-size: 1rem;
 position: relative;
 margin: 10px;
 }
-/*
-.btn3{
 
-    overflow: hidden;
-    border-radius: 30px;
-    box-shadow: 0 0 0 0 rgba(143,64,248,0.5),0 0 0 0 rgb(39,200,255,0.5);
-    transition: transform 0.3s ease,box-shadow 0.3s ease;
-
-}
-
-
-.btn3::after {
-    
-    content: "";
-    position: absolute;
-    width: 400px;
-    height: 400px;
-    left: -100px;
-    top: -50px;
-    background-color: aqua;
-    background-image: linear-gradient(
-        225deg,
-        green 0%,
-        blue 50%,
-        red 100%
-        );
-    z-index: -1;
-    transition: transform 0.5s ease;
-
-}
-.btn3:hover {
-    transform: translate(0px, -6px);  
-    box-shadow: 10px -10px 25px 0 rgba($color: blue ),-10px 10px 25px 0 rgba(green);
-}
-
-
-.btn3:hover::after {
-    transform: rotate(150deg);  
-}
-
-*/
 
 .btn1{
     background:black;

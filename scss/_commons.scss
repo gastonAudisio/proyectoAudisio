@@ -64,9 +64,10 @@ width: 100%;
 }
 
 .imgCards{
-    width: 13rem;
+    width: 12rem;
     @include marginImagenes(10px,10px,10px,10px)
 }
+
 
 .flexFooter{
     @include flexPie(row,center,space-around)
