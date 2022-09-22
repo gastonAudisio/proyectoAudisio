@@ -4,7 +4,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Bungee+Spice&family=DynaPuff&family=Roboto:wght@100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Bungee+Spice&family=DynaPuff&family=Montserrat:wght@200&family=Roboto:wght@100&display=swap');
 
-
 $fontOne:'DynaPuff', cursive;
 $fontTwo:'Aboreto', cursive;
 $gradientOne:to right ,rgb(199, 227, 255),rgb(8, 95, 175);
@@ -12,7 +11,7 @@ $gradientOne:to right ,rgb(199, 227, 255),rgb(8, 95, 175);
 h1{
     
     background: linear-gradient($gradientOne);
-    font-family: $map-get($map: $fonts, $key:"tres");
+    font-family: map-get($map: $fonts, $key:"cinco");
     padding: 1.5rem;
     margin: 5px 20px;
     border-radius: 10px;

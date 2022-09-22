@@ -1,6 +1,9 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=DynaPuff&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Aboreto&family=DynaPuff&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Aboreto&family=DynaPuff&family=Roboto:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Aboreto&family=Bungee+Spice&family=DynaPuff&family=Roboto:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Aboreto&family=Bungee+Spice&family=DynaPuff&family=Montserrat:wght@200&family=Roboto:wght@100&display=swap");
 * {
   box-sizing: border-box;
 }
@@ -15,15 +18,9 @@ html body h1, html body h2, html body h3 {
   color: darkblue;
 }
 
-.pBox {
-  width: 90%;
-  height: auto;
-  margin: 20px auto;
-}
-
 .img {
-  height: 70%;
-  width: 100%;
+  width: 70%;
+  height: 100%;
 }
 
 .imgC {
@@ -67,8 +64,8 @@ html body h1, html body h2, html body h3 {
   }
 }
 .flexImg {
-  width: 100%;
   display: flex;
+  width: 100%;
   flex-wrap: wrap;
   flex-direction: row;
   align-items: flex-start;
@@ -77,15 +74,12 @@ html body h1, html body h2, html body h3 {
   margin-bottom: 10px;
 }
 
-.imgMargin {
+.imgCards {
+  width: 13rem;
   margin-top: 10px;
   margin-bottom: 10px;
   margin-left: 10px;
   margin-right: 10px;
-}
-
-.imgCards {
-  width: 13rem;
 }
 
 .flexFooter {
@@ -200,7 +194,7 @@ html body h1, html body h2, html body h3 {
 
 h1, h3, h2 {
   background: linear-gradient(to right, rgb(199, 227, 255), rgb(8, 95, 175));
-  font-family: "DynaPuff", cursive;
+  font-family: "Montserrat", sans-serif;
   padding: 1.5rem;
   margin: 5px 20px;
   border-radius: 10px;
@@ -224,7 +218,11 @@ h3 {
   text-align: center;
 }
 
-.pFont {
+.pBox {
+  width: 90%;
+  height: auto;
+  margin: 20px auto;
+  color: black;
   font-family: "Aboreto", cursive;
   font-size: 20px;
   font-weight: 700;
