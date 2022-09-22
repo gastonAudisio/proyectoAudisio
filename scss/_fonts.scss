@@ -29,12 +29,10 @@ h3{
     text-align: center;
 }
 
-
-.pFont{
-    font-family: $fontTwo;
-    font-size: 20px;
-    font-weight:700;
+.pBox{
+@include texto(90%,auto,20px auto)
 }
+
 .pCard{
     padding-top: 17px;
 }

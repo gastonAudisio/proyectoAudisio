@@ -1,5 +1,5 @@
 
-//variables declaradas
+//declaracín de variables
 
 $colorOne:rgb(234, 234, 245);
 $colorTwo: darkblue;
@@ -28,15 +28,9 @@ html {
 
 //clases
 
-.pBox{
-    width: 90%;
-    height: auto;
-    margin: 20px auto;
-}
 
 .img{
-   height: 70%;
-   width: 100%;
+    @include imagenes(70%,100%)
 }
 .imgC{
    width: 50%;
@@ -67,41 +61,20 @@ width: 100%;
     to {opacity: 1;}
 }
 
+
 .flexImg{
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-items:flex-start;
-    justify-content: space-around;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    @include flexImagenes(100%,wrap,row,flex-start,space-around)
 
 }
 
-.imgMargin{
-
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
-    
-}
 .imgCards{
-
     width: 13rem;
- 
+    @include marginImagenes(10px,10px,10px,10px)
 }
-
-
-
-
 
 .flexFooter{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
+
+    @include flexPie(row,center,space-around)
    
 }
 

@@ -1,0 +1,30 @@
+
+.texto{
+    width: 90%;
+    height: auto;
+    margin: 20px auto;
+}
+
+@mixin texto ($width,$height,$margin) {
+    color: black;
+    font-family: $fontTwo;
+    font-size: 20px;
+    font-weight:700;
+    
+}
+
+@mixin imagenes ($width,$height) {
+}
+
+@mixin flexImagenes ($width,$flexWrap,$flexDirection,$alignItems,$justifyContent) {
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+@mixin marginImagenes ($top,$bot,$left,$right) {
+ 
+}
+@mixin flexPie ($flexDirection,$alignItems,$justifyContent) {
+    display: flex;
+ 
+}
