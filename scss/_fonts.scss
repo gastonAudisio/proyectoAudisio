@@ -14,6 +14,7 @@ h1{
     background: linear-gradient($gradientOne);
     font-family: map-get($map: $fonts, $key:"cinco");
     padding: 1.5rem;
+    font-weight:700;
     margin: 5px 20px;
     border-radius: 10px;
     animation-name: textOpacity ;
