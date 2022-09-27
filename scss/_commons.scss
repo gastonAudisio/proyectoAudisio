@@ -1,10 +1,11 @@
 
-//declaracín de variables
+//----declaracín de variables-------
 
 $colorOne:rgb(234, 234, 245);
 $colorTwo: darkblue;
 $colorThree:  rgb(25, 23, 126);
 
+//----------------------------------
 
 *{
     box-sizing: border-box;
@@ -71,6 +72,11 @@ width: 100%;
 
 .flexFooter{
     @include flexPie(row,center,space-around)
+}
+.flexHead{
+    @include flexPie(row,center,flex-start)
+
+
 }
 
 /*------grid index----------------*/

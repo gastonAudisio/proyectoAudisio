@@ -89,6 +89,13 @@ html body h1, html body h2, html body h3 {
   justify-content: space-around;
 }
 
+.flexHead {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
 /*------grid index----------------*/
 #gridContenedor {
   display: grid;
