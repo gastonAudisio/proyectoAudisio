@@ -97,7 +97,7 @@ html body h1, html body h4, html body h3 {
 }
 
 .boxError {
-  margin-left: 200px;
+  margin-left: 3rem;
 }
 
 /*------grid index----------------*/
@@ -207,6 +207,7 @@ html body h1, html body h4, html body h3 {
 #gridContenedorError {
   display: grid;
   width: 98.5vw;
+  height: 100vh;
   gap: 10px;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 5fr 0, 5fr;
@@ -274,6 +275,11 @@ h2 {
   background: linear-gradient(to right, rgb(22, 69, 116), rgb(10, 109, 201));
   border-color: white;
   border-radius: 30px;
+}
+
+.fontForm {
+  font-family: "Aboreto", cursive;
+  font-weight: 300;
 }
 
 /*------responsive index----------------*/
@@ -411,11 +417,6 @@ aside ul {
   text-decoration: none;
   font-family: "DynaPuff", cursive;
   font-size: 1.5rem;
-}
-
-.fontForm {
-  font-family: "Aboreto", cursive;
-  font-weight: 700;
 }
 
 .boton {

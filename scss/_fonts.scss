@@ -67,3 +67,9 @@ h2{
     border-radius: 30px;
 }
 
+.fontForm{
+    @extend .fontNav;
+
+    font-family: $fontTwo;
+    font-weight: 300;
+}
