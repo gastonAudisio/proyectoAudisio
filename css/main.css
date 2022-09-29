@@ -14,7 +14,7 @@ html {
 html body {
   background-color: rgb(234, 234, 245);
 }
-html body h1, html body h2, html body h3 {
+html body h1, html body h4, html body h3 {
   color: darkblue;
 }
 
@@ -94,6 +94,10 @@ html body h1, html body h2, html body h3 {
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
+}
+
+.boxError {
+  margin-left: 200px;
 }
 
 /*------grid index----------------*/
@@ -199,7 +203,21 @@ html body h1, html body h2, html body h3 {
   background-color: rgb(25, 23, 126);
 }
 
-h1, h3, h2 {
+/*------grid Error----------------*/
+#gridContenedorError {
+  display: grid;
+  width: 98.5vw;
+  gap: 10px;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 5fr 0, 5fr;
+  grid-template-areas: "one" "two" "five";
+}
+#gridContenedorError .two {
+  grid-area: two;
+  justify-content: center;
+}
+
+h1, h3, h4 {
   background: linear-gradient(to right, rgb(199, 227, 255), rgb(8, 95, 175));
   font-family: "Montserrat", sans-serif;
   padding: 1.5rem;
@@ -212,7 +230,7 @@ h1, h3, h2 {
           animation-duration: 4s;
 }
 
-h2 {
+h4 {
   padding: 0.5rem;
   margin: 5px 40px;
 }
@@ -220,6 +238,13 @@ h2 {
 h3 {
   padding: 1rem;
   margin: 20px 20px;
+}
+
+h2 {
+  font-family: "Montserrat", sans-serif;
+  font-family: rgb(0, 0, 0);
+  font-size: 20px;
+  font-weight: 800;
 }
 
 .textCenter {
@@ -382,10 +407,15 @@ aside ul {
   margin: 2rem auto;
 }
 
-.fontNav {
+.fontNav, .fontForm {
   text-decoration: none;
   font-family: "DynaPuff", cursive;
   font-size: 1.5rem;
+}
+
+.fontForm {
+  font-family: "Aboreto", cursive;
+  font-weight: 700;
 }
 
 .boton {

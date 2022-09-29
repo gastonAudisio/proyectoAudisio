@@ -18,7 +18,7 @@ html {
    
         background-color: $colorOne;
         
-        h1,h2,h3{
+        h1,h3{
             color :$colorTwo
         }
 
@@ -76,8 +76,21 @@ width: 100%;
 .flexHead{
     @include flexPie(row,center,flex-start)
 
-
 }
+
+
+.boxError{
+    margin-left: 200px;
+}
+     
+    
+.fontForm{
+    @extend .fontNav;
+
+    font-family: $fontTwo;
+    font-weight: 700;
+}
+
 
 /*------grid index----------------*/
 #gridContenedor{
@@ -220,4 +233,26 @@ width: 100%;
    grid-area: five;
    background-color: $colorThree;
 }
+
+
+/*------grid Error----------------*/
+#gridContenedorError{
+    display: grid;
+    width: 98.5vw;
+     
+    gap: 10px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 5fr 0,5fr;
+    grid-template-areas: 
+    "one" 
+    "two"   
+    "five" 
+    ;
+
+    .two{
+        grid-area: two;
+        justify-content: center;
+    }
+}
+    
 

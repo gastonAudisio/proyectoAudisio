@@ -23,7 +23,7 @@ h1{
     animation-name: textOpacity ;
     animation-duration: 4s;
 }
-h2{
+h4{
 @extend h1;
     padding: 0.5rem;
     margin: 5px 40px;
@@ -32,6 +32,15 @@ h3{
     @extend h1;
     padding: 1rem;
     margin: 20px 20px;
+}
+
+h2{
+    
+    font-family: map-get($map: $fonts, $key:"cinco");
+    font-family: map-get($map: $paletaColores, $key:"seis");
+    font-size: 20px;
+    font-weight:800;
+    
 }
 .textCenter{
     text-align: center;
@@ -56,8 +65,5 @@ h3{
     background: linear-gradient($gradientTwo);
     border-color: white;
     border-radius: 30px;
- 
-    
-    
-
 }
+
