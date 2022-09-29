@@ -96,10 +96,6 @@ html body h1, html body h4, html body h3 {
   justify-content: flex-start;
 }
 
-.boxError {
-  margin-left: 3rem;
-}
-
 /*------grid index----------------*/
 #gridContenedor {
   display: grid;
@@ -203,18 +199,14 @@ html body h1, html body h4, html body h3 {
   background-color: rgb(25, 23, 126);
 }
 
-/*------grid Error----------------*/
-#gridContenedorError {
-  display: grid;
+/*------Pagina de Error----------------*/
+.contenedorError {
+  display: flex;
   width: 98.5vw;
   height: 100vh;
-  gap: 10px;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 5fr 0, 5fr;
-  grid-template-areas: "one" "two" "five";
 }
-#gridContenedorError .two {
-  grid-area: two;
+
+.boxError {
   justify-content: center;
 }
 

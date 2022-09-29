@@ -79,11 +79,6 @@ width: 100%;
 }
 
 
-.boxError{
-    margin-left: 3rem;
-}
-     
-
 
 
 /*------grid index----------------*/
@@ -229,24 +224,16 @@ width: 100%;
 }
 
 
-/*------grid Error----------------*/
-#gridContenedorError{
-    display: grid;
+/*------Pagina de Error----------------*/
+.contenedorError{
+    display: flex;
     width: 98.5vw;
     height: 100vh;
-    gap: 10px;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 5fr 0,5fr;
-    grid-template-areas: 
-    "one" 
-    "two"   
-    "five" 
-    ;
 
-    .two{
-        grid-area: two;
-        justify-content: center;
-    }
+
 }
     
-
+.boxError{
+    justify-content: center;
+}
+   
