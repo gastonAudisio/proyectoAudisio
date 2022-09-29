@@ -279,7 +279,7 @@ h2 {
 
 .fontForm {
   font-family: "Aboreto", cursive;
-  font-weight: 300;
+  font-weight: 800;
 }
 
 /*------responsive index----------------*/
@@ -413,7 +413,7 @@ aside ul {
   margin: 2rem auto;
 }
 
-.fontNav, .fontForm {
+.fontNav {
   text-decoration: none;
   font-family: "DynaPuff", cursive;
   font-size: 1.5rem;
