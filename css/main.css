@@ -207,6 +207,11 @@ html body h1, html body h4, html body h3 {
 }
 
 .boxError {
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.boxSherlock {
   justify-content: center;
 }
 
