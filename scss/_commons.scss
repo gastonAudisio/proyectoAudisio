@@ -226,20 +226,24 @@ width: 100%;
 
 /*------Pagina de Error----------------*/
 .contenedorError{
-    display: flex;
-    width: 98.5vw;
-    height: 100vh;
-
-
+    display: grid;
+    width: 100vw;
+    height: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 6fr 1fr;
+    grid-template-areas: 
+    "one" 
+    "three" 
+    "five" 
+    ;
 }
     
 .boxError{
     margin: 1rem;
     padding: 1rem;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+}
+   
 
-}
-   
-.boxSherlock{
-   justify-content: center;
-}
-   
