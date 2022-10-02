@@ -6,4 +6,3 @@ Para este proyecto se utilizó la extensión Web Sass Compiler.
 Todos los botones de las cards llevan a una página de error#404.
 Se incluyó un archivos .gitignore con imágenes que no se utilizaron.
 
-
