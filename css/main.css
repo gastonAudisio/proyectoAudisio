@@ -434,8 +434,8 @@ aside ul {
 
 .btn3::after {
   content: "";
-  width: 400px;
-  height: 400px;
+  width: 500px;
+  height: 500px;
   position: absolute;
   left: -100px;
   top: -50px;
